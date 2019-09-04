@@ -11,7 +11,7 @@ var server = http.createServer(function(req,res){
     //req.url表示url地址中，端口以后的内容
     //http://.....com/s?id=45621305623
     ///s?id=45621305623
-    //使用了url.parse将req.url转化为了对象,对象提取pathname
+    //使用了url.parse将req.url转化为了对象,对象路径名称提取pathname
     var urlObj = url.parse(req.url); 
     var urlPathName = urlObj.pathname;
     console.log(urlPathName);//     /
@@ -31,7 +31,8 @@ var server = http.createServer(function(req,res){
     // console.log(urlPathName);
     else if(urlPathName == "/js/index.js"){
         //页面自己执行localhost：8081/js/index.js
-        var jsPath = path.join(__dirname+"/js/index.js");
+        //__dirname指正在执行js文件路径
+        var jsPath = path.join(__dirname+"/js/index.js");//连接路径
         var jsContent = fs.readFileSync(jsPath);
         jsContent = jsContent.toString("utf8");
         console.log(jsContent);
