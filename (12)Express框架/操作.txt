@@ -1,0 +1,15 @@
+npm i -g express
+
+npm i -g express-generator
+
+创建工程HelloExpress：
+express -e HelloExpress
+最新写法：
+express --view=ejs HelloExpress
+表示ejs类型？？
+
+1.npm start启动bin中的www文件（监听一个端口，发起请求进入app.js）
+2.app.js是入口文件（做出不同的响应，分析资源路径，根据资源路径，决定进入routes中的那个js文件）
+3.routes存放路由文件（响应views里面的页面到浏览器）
+4.views存放视图文件
+public存放静态资源
