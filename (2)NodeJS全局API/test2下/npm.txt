@@ -1,9 +1,0 @@
-1.nrm用来切换第三方模块下载的服务器的(一个网速较慢，原来的服务器上不存在该模块)
-2.install date-now 在当前目录安装，模块会被添加到node_modules
-install date-now -g  全局安装
-3.npm install nvmw -g
-4.nvmw 进行node版本管理的工具
-nvmw ls 查看所有安装的node版本
-nvmw install v4.5.0  安装一个新的版本v4.5.0 //可以用此进行版本管理
-nvmw uninstall v4.5.0  卸载
-nvmw use v10.16.3   切换node的版本
